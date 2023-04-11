@@ -14,9 +14,8 @@ body {
   align-content: center;
   background: hsl(185, 75%, 39%);
   background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-  background-attachment: fixed;
-  background-position: -20vw -50vh, 175% -150%;
-  background-repeat: no-repeat;
+  background-position: right 55vw bottom 35vh, left 50vw top 50vh;
+  background-repeat: no-repeat no-repeat;
 }
 
 .bolded-font {
@@ -42,6 +41,8 @@ main {
   border-radius: 1.5rem;
   overflow: hidden;
   background: white;
+  margin-bottom: 2rem;
+  box-shadow: 0px 25px 50px hsla(0, 0%, 0%, 0.35);
 }
 
 .pfp {
