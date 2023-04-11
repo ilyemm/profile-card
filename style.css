@@ -85,7 +85,7 @@ main {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .user-stats .stats-num {
   margin-bottom: 0.3rem;
