@@ -1,0 +1,136 @@
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+// ### Primary
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+// ### Neutral
+$dark-gray: hsl(0, 0%, 59%);
+
+// ## Typography
+
+// ### Body Copy
+// name and stats
+$body-font-size: 1.8rem;
+
+// ### Font
+// weights: 400, 700
+$font-stack: 'Kumbh Sans', sans-serif;
+
+html{font-size: 62.5%;}
+body 
+{
+    font-size: $body-font-size;
+    font-family: $font-stack;
+    color: $dark-grayish-blue;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+
+    background: $dark-cyan;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat no-repeat;
+}
+
+
+.bolded-font 
+{
+    font-weight: 700;
+    color: $very-dark-blue;
+}
+
+main 
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 90%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    text-align: center;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: white;
+}
+
+.pfp 
+{
+    width: 30%;
+    transform: translateY(-55%);
+    border: .5rem solid white;
+    border-radius: 100%;
+}
+
+.user-info
+{
+    margin-top: -4.5rem;
+    
+    .city 
+    {
+        margin: .75rem auto 0;
+        font-size: 1.5rem;
+    }
+}
+
+.user-name-age *
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.full-name
+{
+    margin-right: .25rem;
+}
+
+.grey-line
+{
+    background: $dark-gray;
+    opacity: .25;
+    height: 1px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.user-stats
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 4rem 1.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .stats-num
+    {
+        margin-bottom: .3rem;
+    }
+
+    .stats-type 
+    {
+        margin-top: 0;
+        font-size: 1rem;
+        letter-spacing: .2rem;
+    }
+}
+    
+
